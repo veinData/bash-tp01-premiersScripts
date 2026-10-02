@@ -7,24 +7,44 @@
 # Auteur : [Votre nom]
 # Date : [Date]
 ################################################################################
+nombre=$(( $RANDOM % $2 + $1 ))
+n=5
+e=1
 
-# TODO: Vérifier que 2 paramètres sont fournis
+for i in {1..5}
+do
+    echo "Nombre d'essais restants : $n " 
+    echo "Votre proposition : "  
+    #echo "$nombre "  
 
+    read test
 
-# TODO: Valider que les paramètres sont des nombres
-
-
-# TODO: Valider que min < max
-
-
-# TODO: Générer un nombre aléatoire entre min et max
-
-
-# TODO: Initialiser le nombre d'essais (5 par défaut, 3 en mode difficile)
-
-
-# TODO: Boucle de jeu avec 5 essais maximum
+    if [ $test -lt $nombre ] || [ $test -gt $nombre ]; then
+        if [ $test -lt $nombre ]; then
+            echo "Trop petit !"
 
 
-# TODO: Afficher le message de fin (victoire ou défaite)
+        else
+            echo "Trop grand !"
 
+                    
+
+        fi
+            
+        
+        n=$((n-1))
+        e=$((1+e))    
+
+    else
+        
+        echo "Bravo ! Vous avez trouvé en $e essais !" 
+        break
+    fi
+
+done
+    
+if [ $n -eq 0 ]; then
+    echo "C'est l'heure de la sieste du mercredi !!!" 
+
+
+fi
