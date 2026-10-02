@@ -1,8 +1,8 @@
 # Réponses aux questions du TP01 - Premiers scripts Bash
 
-**Nom :** [Votre nom]
-**Classe :** [Votre classe]
-**Date :** [Date]
+**Nom :** Trocherie
+**Classe :** BTS_cielIR2
+**Date :** 25/09/26
 
 ---
 

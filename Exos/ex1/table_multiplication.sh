@@ -7,11 +7,12 @@
 # Date : [Date]
 ################################################################################
 
-# TODO: Demander un nombre à l'utilisateur
+echo "Entrez un nombre : "
+read nombre
 
 
-# TODO: Valider que l'entrée est bien un nombre
-
-
-# TODO: Afficher la table de multiplication de 1 à 10
-
+echo "Table de multiplication de $nombre : "
+for i in {1..10}
+do
+    echo "$nombre x $i = $((nombre*i)) "
+done
