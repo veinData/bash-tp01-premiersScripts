@@ -7,6 +7,19 @@
 # Auteur : [Votre nom]
 # Date : [Date]
 ################################################################################
+
+
+while [ $1 -lt 5 ] || [  $2 -lt 5  ]; do # On tourne tant que i<5
+    echo"Les 2 paramètres ne sont pas adapté"
+    read P1 P2
+
+
+
+
+done 
+
+
+
 nombre=$(( $RANDOM % $2 + $1 ))
 n=5
 e=1
